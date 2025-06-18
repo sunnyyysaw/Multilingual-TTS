@@ -1,4 +1,4 @@
-# Multilingual-TTS
+# Multilingual-TTS (Text-to-Speech) System Using Suno’s Bark Model
 ## Overview
 
 This project presents a multilingual Text-to-Speech (TTS) system built on Suno AI’s Bark model, a transformer-based architecture capable of producing natural, expressive speech across various languages and speaker profiles. The system is designed to overcome limitations in traditional TTS systems, such as robotic-sounding output, limited language support, and lack of voice diversity.
@@ -27,6 +27,8 @@ Text Preprocessing:
 
 - Text Cleaning (optional): Custom rules for typos, abbreviations, and formatting.
 
+![image](https://github.com/user-attachments/assets/2f0d5f05-158a-4e21-b2af-9e2174167d8a)
+
 Text Encoder: Uses a transformer model to convert text into a meaningful numerical representation.
 
 Mel Spectrogram Decoder: Predicts a mel spectrogram, capturing acoustic characteristics of human speech.
@@ -40,3 +42,13 @@ Audio Post-Processing (optional):
 - Noise Reduction
 
 Final Output: Synthesized speech can be played or saved as a WAV file.
+
+## Bark Model Components
+
+BarkSemanticModel: Predicts semantic tokens from the input text.
+
+BarkCoarseModel: Generates the first set of audio codebooks based on semantic tokens.
+
+BarkFineModel: Refines and completes the audio representation using additional codebooks.
+
+EncodecModel: Decodes the final codebooks into natural-sounding audio.
