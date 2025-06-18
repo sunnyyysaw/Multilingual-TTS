@@ -71,6 +71,8 @@ Save output as a WAV file or NumPy array.
 
 Visualize waveform and amplitude using matplotlib.
 
+![image](https://github.com/user-attachments/assets/b65109e4-c173-4cb1-92ba-e4d2fd99e2de)
+
 ## Performance Evaluation
 
 Processing time per sentence
